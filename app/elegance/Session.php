@@ -31,12 +31,10 @@ abstract class Session
 }
 
 if (isset($_SERVER['HTTP_HOST'])) {
-    $cookieTime = env('COOKIE_TIME', 1) * 24 * 60 * 60;
+    $cookieTime = env('COOKIE_TIME', 1) * 60 * 60;
 
-    $char = substr($_SERVER['HTTP_HOST'], 0, 1);
-
-    $sessionName = $_SERVER['REMOTE_ADDR'] . $char . 'SESSIONID';
-    $sessionName = cif_on($sessionName, $char);
+    $sessionName = $_SERVER['REMOTE_ADDR'] . 'SESSIONID';
+    $sessionName = cif_on($sessionName, 's');
 
     session_set_cookie_params($cookieTime, '/', '', true, true);
 
