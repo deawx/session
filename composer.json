@@ -1,6 +1,6 @@
 {
     "name": "elegance/session",
-    "description": "Controle sessão e cookies do PHP",
+    "description": "Controle de sessão e cookies do PHP",
     "license": "MIT",
     "authors": [
         {
