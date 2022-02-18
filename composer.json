@@ -1,0 +1,25 @@
+{
+    "name": "elegance/session",
+    "description": "Controle sessão e cookies do PHP",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "André Ricardo",
+            "email": "contatoadmx@gamil.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "": "app/"
+        },
+        "files": [
+            "./helper/function/cookie.php",
+            "./helper/function/session.php"
+        ]
+    },
+    "require": {
+        "elegance/php-extend": "^1.0",
+        "elegance/env": "^1.0",
+        "elegance/cifcode": "^1.0"
+    }
+}
